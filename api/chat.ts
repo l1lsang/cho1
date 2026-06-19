@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { createChatResponse } from "../src/server/chat";
-import { nodeRequestToWebRequest, sendWebResponse } from "../src/server/http";
+import { createChatResponse } from "../src/server/chat.js";
+import { nodeRequestToWebRequest, sendWebResponse } from "../src/server/http.js";
 
 export const config = {
   maxDuration: 30,
