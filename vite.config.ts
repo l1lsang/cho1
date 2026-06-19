@@ -41,6 +41,7 @@ export default defineConfig(({ mode }) => {
   Object.assign(process.env, loadEnv(mode, process.cwd(), ""));
 
   return {
+    root: process.cwd(),
     plugins: [react(), localChatApi()],
     resolve: {
       alias: {
